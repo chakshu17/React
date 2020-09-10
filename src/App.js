@@ -6,12 +6,17 @@ import Welcome from "./components/welcome";
 import Hello from "./components/Hello";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
 function App() {
 	return (
 		<div className="App">
 			
+			<FunctionClick />
+			<ClassClick/>
+			{/*	
 			<Greet name="Diana" heroName="Wonder Woman" />
-			{/*	<Message /> 
+			<Welcome name="Bruce" heroName="Batman"/><Message /> 
 			<Greet></Greet>
 			<Counter></Counter>
 			<Welcome></Welcome>
