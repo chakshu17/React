@@ -14,14 +14,27 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheets from "./components/Stylesheets";
 import Inline from "./components/Inline";
+import './appStyle.css';
+import styles from './appStyles.module.css'
 function App() {
 	return (
 		<div className="App">
-		<Inline/>
+			<h1 className='error'>Error</h1>
+			<h1 className={styles.success}>Success</h1>
 			{/*
 			CSS
 			<Stylesheets primary={true}/>
 			2. Inline css:   <Inline/> 
+			3. css module:    
+		
+			import './appStyle.css';
+			<h1 className='error'>Error</h1>
+
+
+			<h1 className={styles.success}>Success</h1>
+			import styles from './appStyles.module.css'
+
+
 			List rendering:
 				<NameList/>	
 						
