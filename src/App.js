@@ -13,14 +13,15 @@ import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheets from "./components/Stylesheets";
+import Inline from "./components/Inline";
 function App() {
 	return (
 		<div className="App">
-			<Stylesheets primary={true} />
+		<Inline/>
 			{/*
 			CSS
 			<Stylesheets primary={true}/>
-
+			2. Inline css:   <Inline/> 
 			List rendering:
 				<NameList/>	
 						
