@@ -16,12 +16,13 @@ import Stylesheets from "./components/Stylesheets";
 import Inline from "./components/Inline";
 import './appStyle.css';
 import styles from './appStyles.module.css'
+import Form from "./Form module/Form";
 function App() {
 	return (
 		<div className="App">
-			<h1 className='error'>Error</h1>
-			<h1 className={styles.success}>Success</h1>
-			{/*
+		<Form/>
+			{/*Form module
+			<Form/>
 			CSS
 			<Stylesheets primary={true}/>
 			2. Inline css:   <Inline/> 
