@@ -12,12 +12,15 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import Stylesheets from "./components/Stylesheets";
 function App() {
 	return (
 		<div className="App">
-			
-				<NameList/>
+			<Stylesheets primary={true} />
 			{/*
+			CSS
+			<Stylesheets primary={true}/>
+
 			List rendering:
 				<NameList/>	
 						
@@ -45,7 +48,6 @@ function App() {
 			<Welcome name="Bruce" heroName="Batman"/>
 			<Welcome name="Clark" heroName="Superman"/>
 			<Welcome name="Diana" heroName="Wonder Woman"/> */}
-	
 		</div>
 	);
 }
