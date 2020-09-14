@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import FRParentInput from "./Refs/FRParentInput";
+import PortalDemo from "./Portals/PortalDemo";
 
 
 function App() {
 	return (
 		<div className="App">
-		<FRParentInput/>
+			<PortalDemo />
 
 			{/*
-			
+			portals:portals
 			refs: Refs
 
 
