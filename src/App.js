@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
-import FocusInput from "./Refs/FocusInput";
+import FRParentInput from "./Refs/FRParentInput";
 
 
 function App() {
 	return (
 		<div className="App">
-		<FocusInput/>
+		<FRParentInput/>
+
 			{/*
 			
 			refs: Refs
