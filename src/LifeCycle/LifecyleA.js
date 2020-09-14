@@ -18,9 +18,31 @@ class LifecyleA extends Component {
   componentDidMount(){
     console.log('LifecycleA coponentDidMount');
   }
-	render() {
+
+  shouldComponentUpdate(){
+    console.log('LifecycleA shoudlComponentUpdate');
+    return true
+  }
+  
+  getSnapshotBeforeUpdate(prevProps,prevState){
+    console.log('LifecycleA getUPdate...');
+    return null;
+  }
+  componentDidUpdate(){
+    console.log('LifecycleA compoDidiupdate');
+  }
+  changeState= ()=>{
+    this.setState({
+      name:'Demon King'
+    })
+  }
+  render() {
     console.log('LifecycleA Render');
-		return <div>Lifecycle A
+		return <div> 
+      <div > Lifecycle A <br/>
+
+        <button onClick={this.changeState}>Change</button>
+      </div>
       <LifecyleB/>
     </div>;
 	}
