@@ -15,14 +15,24 @@ import "./App.css";
 // import Stylesheets from "./components/Stylesheets";
 // import Inline from "./components/Inline";
 import './appStyle.css';
-import LifecyleA from "./LifeCycle/LifecyleA";
+// import FragmentDemo from "./Fragments/FragmentDemo";
+import Table from "./Fragments/Table";
+// import LifecyleA from "./LifeCycle/LifecyleA";
 // import styles from './appStyles.module.css'
 // import Form from "./Form module/Form";
 function App() {
 	return (
 		<div className="App">
+		<Table/>
+			{/*
+			Fragments
+				<FragmentDemo/>
+
+
+			Lifecycle
 			<LifecyleA/>
-			{/*Form module
+
+			Form module
 			<Form/>
 			CSS
 			<Stylesheets primary={true}/>
