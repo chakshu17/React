@@ -8,6 +8,7 @@ import RegComp from './RegComp'
 
 // pure component check whether the state is changed or not , IF changed then it rerenders , 
 // IF not then it does not re render.
+// it only works with class base components
 class ParentComp extends PureComponent {
    constructor(props) {
      super(props)
