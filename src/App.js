@@ -17,17 +17,21 @@ import "./App.css";
 import './appStyle.css';
 // import FragmentDemo from "./Fragments/FragmentDemo";
 import Table from "./Fragments/Table";
+import ParentComp from "./PureComponnets/ParentComp";
+import PureComp from "./PureComponnets/PureComp";
 // import LifecyleA from "./LifeCycle/LifecyleA";
 // import styles from './appStyles.module.css'
 // import Form from "./Form module/Form";
 function App() {
 	return (
 		<div className="App">
-		<Table/>
+			<ParentComp/>
 			{/*
+			Pure Components
+			folder name: purecomponent 
 			Fragments
 				<FragmentDemo/>
-
+				<Table/>
 
 			Lifecycle
 			<LifecyleA/>
