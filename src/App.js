@@ -15,12 +15,13 @@ import "./App.css";
 // import Stylesheets from "./components/Stylesheets";
 // import Inline from "./components/Inline";
 import './appStyle.css';
+import LifecyleA from "./LifeCycle/LifecyleA";
 // import styles from './appStyles.module.css'
 // import Form from "./Form module/Form";
 function App() {
 	return (
 		<div className="App">
-
+			<LifecyleA/>
 			{/*Form module
 			<Form/>
 			CSS
