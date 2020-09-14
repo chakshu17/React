@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
-import PortalDemo from "./Portals/PortalDemo";
-
+import ErrorBoundary from "./Error handler/ErrorBoundary";
+import Hero from "./Error handler/Hero";
 
 function App() {
 	return (
 		<div className="App">
-			<PortalDemo />
-
+			<ErrorBoundary>
+				<Hero heroName="Batman" />
+			</ErrorBoundary>
+			<ErrorBoundary>
+				<Hero heroName="Joker" />
+			</ErrorBoundary>
 			{/*
 			portals:portals
 			refs: Refs
