@@ -1,24 +1,14 @@
 import React from "react";
 import "./App.css";
-import ClickCounterTwo from "./Render Props/ClickCounterTwo";
-import Counter from "./Render Props/Counter";
-import HowerCounterTwo from "./Render Props/HowerCounterTwo";
-
+import ComponentC from './Context/ComponentC'
+import { UserProvider } from "./Context/userContext";
 function App() {
 	return (
 		<div className="App">
-			<Counter>
-				{(count, incrementCount) => (
-					<ClickCounterTwo count={count} incrementCount={incrementCount} />
-				)}
-			</Counter>
-
-			<Counter>
-				{(count, incrementCount) => (
-					<HowerCounterTwo count={count} incrementCount={incrementCount} />
-				)}
-			</Counter>
-	</div>
+		<UserProvider value="Chakshu">
+			<ComponentC/>
+		</UserProvider>
+		</div>
 	);
 }
 
@@ -26,23 +16,23 @@ export default App;
 
 // Render Props
 
-		// Children method
-		//			<Counter>
-		//		{(count, incrementCount) => (
-		//		<ClickCounterTwo count={count} incrementCount={incrementCount} />
-		//		)}
-		//			</Counter>
-		//
-		//		<Counter>
-		//	{(count, incrementCount) => (
-		//	<HowerCounterTwo count={count} incrementCount={incrementCount} />
-		//	)}
-		//	</Counter>
-		//  <Counter
-		// render={(count, incrementCount) => (
-		// 	<ClickCounterTwo count={count} incrementCount={incrementCount} />
-		// )}
-		// />
+	// Children method
+	//			<Counter>
+	//		{(count, incrementCount) => (
+	//		<ClickCounterTwo count={count} incrementCount={incrementCount} />
+	//		)}
+	//			</Counter>
+	//
+	//		<Counter>
+	//	{(count, incrementCount) => (
+	//	<HowerCounterTwo count={count} incrementCount={incrementCount} />
+	//	)}
+	//	</Counter>
+	//  <Counter
+	// render={(count, incrementCount) => (
+	// 	<ClickCounterTwo count={count} incrementCount={incrementCount} />
+	// )}
+	// />
 
 	// render method
 	// <Counter
