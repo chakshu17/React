@@ -1,87 +1,120 @@
 import React from "react";
 import "./App.css";
-import ClickCounter from "./HIgher Order Component/ClickCounter";
-import HoverCounter from "./HIgher Order Component/HoverCounter";
-
+import ClickCounterTwo from "./Render Props/ClickCounterTwo";
+import Counter from "./Render Props/Counter";
+import HowerCounterTwo from "./Render Props/HowerCounterTwo";
 
 function App() {
 	return (
 		<div className="App">
-		<ClickCounter name="Chakshu"/>
-		<HoverCounter/>
-		</div>
-	
+			<Counter>
+				{(count, incrementCount) => (
+					<ClickCounterTwo count={count} incrementCount={incrementCount} />
+				)}
+			</Counter>
+
+			<Counter>
+				{(count, incrementCount) => (
+					<HowerCounterTwo count={count} incrementCount={incrementCount} />
+				)}
+			</Counter>
+	</div>
 	);
 }
 
 export default App;
 
-			// Higher Order Component
-			//		<ClickCounter/>
-			//    <HoverCounter/>
+// Render Props
 
-			// Error handling
-			
-			// <ErrorBoundary>
-			// 	<Hero heroName="Batman" />
-			// </ErrorBoundary>
-			// <ErrorBoundary>
-			// 	<Hero heroName="Joker" />
-			// </ErrorBoundary>
+		// Children method
+		//			<Counter>
+		//		{(count, incrementCount) => (
+		//		<ClickCounterTwo count={count} incrementCount={incrementCount} />
+		//		)}
+		//			</Counter>
+		//
+		//		<Counter>
+		//	{(count, incrementCount) => (
+		//	<HowerCounterTwo count={count} incrementCount={incrementCount} />
+		//	)}
+		//	</Counter>
+		//  <Counter
+		// render={(count, incrementCount) => (
+		// 	<ClickCounterTwo count={count} incrementCount={incrementCount} />
+		// )}
+		// />
 
+	// render method
+	// <Counter
+	// render={(count, incrementCount) => (
+	// 	<HowerCounterTwo count={count} incrementCount={incrementCount} />
+	// )}
+	// />
+	//  <ClickCounterTwo />
+	// <HowerCounterTwo />
+	// <User render={(isloggedIn) => (isloggedIn ? "Chakshu" : "Guest")} />
 
-			// portals:portals
-			// refs: Refs
+// Higher Order Component
+//		<ClickCounter/>
+//    <HoverCounter/>
 
+// Error handling
 
-			// Pure Components
-			// folder name: purecomponent 
-			// Fragments
-			// 	<FragmentDemo/>
-			// 	<Table/>
+// <ErrorBoundary>
+// 	<Hero heroName="Batman" />
+// </ErrorBoundary>
+// <ErrorBoundary>
+// 	<Hero heroName="Joker" />
+// </ErrorBoundary>
 
-			// Lifecycle
-			// <LifecyleA/>
+// portals:portals
+// refs: Refs
 
-			// Form module
-			// <Form/>
-			// CSS
-			// <Stylesheets primary={true}/>
-			// 2. Inline css:   <Inline/> 
-			// 3. css module:    
-		
-			// import './appStyle.css';
-			// <h1 className='error'>Error</h1>
+// Pure Components
+// folder name: purecomponent
+// Fragments
+// 	<FragmentDemo/>
+// 	<Table/>
 
+// Lifecycle
+// <LifecyleA/>
 
-			// <h1 className={styles.success}>Success</h1>
-			// import styles from './appStyles.module.css'
+// Form module
+// <Form/>
+// CSS
+// <Stylesheets primary={true}/>
+// 2. Inline css:   <Inline/>
+// 3. css module:
 
+// import './appStyle.css';
+// <h1 className='error'>Error</h1>
 
-			// List rendering:
-			// 	<NameList/>	
-						
-			// Conditional rendering:
-			// 		<UserGreeting/>
+// <h1 className={styles.success}>Success</h1>
+// import styles from './appStyles.module.css'
 
-			// 	<ParentComponent/>
-			// 		<EventBind/>
-			// <FunctionClick />
-			// <ClassClick/>
-			// <Greet name="Diana" heroName="Wonder Woman" />
-			// <Welcome name="Bruce" heroName="Batman"/><Message /> 
-			// <Greet></Greet>
-			// <Counter></Counter>
-			// <Welcome></Welcome>
-			// <Hello></Hello> 
-			//  <Greet name="Bruce" heroName="Batman">
-			// 	<p>This is Children components</p>
-			// </Greet>
-			// <Greet name="Clark" heroName="Superman">
-			// 	<button>Action</button>
-			// </Greet>
-		
+// List rendering:
+// 	<NameList/>
 
-			// <Welcome name="Bruce" heroName="Batman"/>
-			// <Welcome name="Clark" heroName="Superman"/>
-			// <Welcome name="Diana" heroName="Wonder Woman"/> 
+// Conditional rendering:
+// 		<UserGreeting/>
+
+// 	<ParentComponent/>
+// 		<EventBind/>
+// <FunctionClick />
+// <ClassClick/>
+// <Greet name="Diana" heroName="Wonder Woman" />
+// <Welcome name="Bruce" heroName="Batman"/><Message />
+// <Greet></Greet>
+// <Counter></Counter>
+// <Welcome></Welcome>
+// <Hello></Hello>
+//  <Greet name="Bruce" heroName="Batman">
+// 	<p>This is Children components</p>
+// </Greet>
+// <Greet name="Clark" heroName="Superman">
+// 	<button>Action</button>
+// </Greet>
+
+// <Welcome name="Bruce" heroName="Batman"/>
+// <Welcome name="Clark" heroName="Superman"/>
+// <Welcome name="Diana" heroName="Wonder Woman"/>
